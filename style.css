@@ -1,23 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  background-color: grey;
+  background-color: #EDEFF0;
   font-family: 'Open Sans', sans-serif;
-  color: blue;
-  font-size: 30px;
-  line-height: 30px;
+  font-weight: 300;
+  color:  #7d7d7d;
+  font-size: 15px;
+  line-height: 1.6em;
 }
 
 h1, h2, h3 {
-  color: yellow;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
-  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-a {
-  color: green;
-  text-decoration: underline;
+h1{
+  color: #DD5555;
+  font-size: 22px;
+}
+
+h2{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h3{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+p{
+  text-align: center;
+}
+
+a{
+  color: #ccc;
+  text-decoration: none;
 }
 
 table{
@@ -26,21 +43,22 @@ table{
   line-height: 1.6em;
 }
 
-a:hover {
+a:hover{
+  color: #DD5555;
   text-decoration: none;
 }
 
-.container-fluid {
-  width: 500px;
+.container {
+  width: 90%;
   margin: 30px auto;
 }
 
 
-.card {
+.card{
   background: white;
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -48,16 +66,10 @@ a:hover {
   text-align: center;
 }
 
-
-
-
-
 .img-circle{
   border-radius: 50%;
 }
-.text-center{
-  text-align: center;
-}
+
 .list-inline {
   padding-left: 0;
 }
@@ -101,14 +113,45 @@ a:hover {
   padding: 10px;
 }
 
-# Sidebar
 
 #sidebar {
+  background-color: #384047;
   position: fixed;
-  width: 300px;
-  left: 0;
-  top: 0;
-  bottom: 0;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 120px;
+  text-align: center;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#sidebar li {
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  color:#788188;
+}
+
+#sidebar a:hover {
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  #content{
+    margin-left: 0px;
+  }
+  #sidebar {
+    display: none;
+  }
 }
 #page-content {
   margin-left: 300px;
