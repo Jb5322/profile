@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800|Anton');
 
 body {
-  background-color: #EDEFF0;
+  background-image: url("images/guk.jpg");
+  background-attachment: fixed;
+  background-color: #cccccc;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  color:  #7d7d7d;
+  color:  #8c8c8c;
   font-size: 15px;
   line-height: 1.6em;
+  margin: 0;
 }
 
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
+  color: #a6a6a6;
 }
 
 h1{
-  color: #DD5555;
+  color: #a6a6a6;
   font-size: 22px;
 }
 
@@ -33,7 +37,7 @@ p{
 }
 
 a{
-  color: #ccc;
+  color: #8c8c8c;
   text-decoration: none;
 }
 
@@ -49,15 +53,15 @@ a:hover{
 }
 
 .container {
-  width: 90%;
-  margin: 30px auto;
+  width: 80%;
+  margin: 0px auto;
 }
 
 
 .card{
-  background: white;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   border-radius: 4px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
@@ -68,6 +72,12 @@ a:hover{
 
 .img-circle{
   border-radius: 50%;
+}
+
+#img-profile{
+  width: 100px;
+  height: 100px;
+  border: 3px solid #cccccc;
 }
 
 .list-inline {
@@ -81,7 +91,7 @@ a:hover{
   font-size: 25px;
 }
 .btn-red{
-  background-color: #DD5555;
+  background-color: rgba(88,88,88,0.7);
   color: white;
   font-weight: 500;
   padding: 10px;
@@ -93,14 +103,6 @@ a:hover{
 }
 
 
-
-
-
-#img-profile{
-  width: 100px;
-  height: 100px;
-  border: 3px solid #cccccc;
-}
 #movies{
   font-weight: 300;
   font-size: 15px;
@@ -114,37 +116,6 @@ a:hover{
 }
 
 
-#sidebar {
-  background-color: #384047;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  width: 120px;
-  text-align: center;
-}
-
-#sidebar ul {
-  list-style: none;
-  padding-left: 0px;
-}
-
-#sidebar li {
-  margin-top:50px;
-  margin-bottom: 50px;
-}
-
-#sidebar a {
-  text-decoration: none;
-  font-size: 25px;
-  color:#788188;
-}
-
-#sidebar a:hover {
-  color: white;
-}
-
-
 @media (max-width: 768px) {
   #content{
     margin-left: 0px;
@@ -153,6 +124,31 @@ a:hover{
     display: none;
   }
 }
-#page-content {
-  margin-left: 300px;
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(88,88,88,0.7);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    font-family: 'Anton', sans-serif;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    display: inline-block;
+    color: #a6a6a6;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #a6a6a6;
+    color: black;
 }
